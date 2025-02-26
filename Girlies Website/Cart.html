@@ -1,0 +1,55 @@
+<!--This is the html page file for the cart-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Takalani Sandani's iPhone Store</title>
+    <link rel="stylesheet" href="Cart.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Your Cart</h1>
+        </div>
+        <img src="Images/logo2.jpg" alt="Logo" class="logo">
+    </header>
+
+    <main>
+        <!-- Cart Items List -->
+        <section class="cart-items">
+            <h2>Cart Items</h2>
+            <div id="cart-list">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- User Details Form -->
+        <section class="user-details">
+            <h2>Enter Your Details</h2>
+            <form id="checkout-form">
+                <!-- Location (Address) -->
+                <div class="form-group">
+                    <label for="address"><i class="fas fa-map-marker-alt"></i> Address</label>
+                    <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                </div>
+
+                <h2><strong>Payment Info</strong></h2>
+                <h2>Your order will be received via WhatsApp, and everything will be processed there.</h2>
+
+                <!-- Checkout Button -->
+                <button type="button" onclick="sendCartToWhatsApp()" class="checkout-button">Checkout via WhatsApp</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Girly iPhone Store. All rights reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>

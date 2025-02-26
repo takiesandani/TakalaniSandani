@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Apple Girl ZA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="Images/logo2.jpg" alt="Logo" class="logo">
+        </div>
+        
+        <div class="header-content">
+            <h1>Step Into the Future with an iPhone in Your Hand!</h1>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="cart">
+            <a href="cart.html" id="cart-link">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 3h3l3 10h8l3-8H6" stroke="white" stroke-width="2"/>
+                    <circle cx="9" cy="20" r="2" stroke="white" stroke-width="2"/>
+                    <circle cx="18" cy="20" r="2" stroke="white" stroke-width="2"/>
+                </svg>
+                <span id="cart-count" class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+    
+    <main>
+        <aside>
+            <img src="Images/GirlyIconLogo.jpg" alt="Gestures" class="Gesture">
+            <h2 class="flash-animation">Brand-new and Pre-owned quality Iphones</h2>
+        </aside>
+
+        <!-- Individual products information and declaration -->
+        <section class="product-grid">
+            <!-- Product 1: iPhone XR -->
+<section class="product"> 
+    <img src="Images/Iphone XR black.jpg" alt="iPhone XR" class="product-image">
+    <h2>iPhone XR</h2>
+    <p class="price">R2400</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone XR-color">Color:</label>
+        <select id="iPhone XR-color" class="color-dropdown">
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Red">Red</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone XR', 2400, 'Images/Iphone XR black.jpg', 'A budget-friendly iPhone with a stunning display.', 'iPhone XR-color', '128GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone XR')">More Info</button>
+    <div id="iPhone XR-info" class="more-info-details">
+        <p><strong>Color:</strong> Black, White & Red</p>
+        <p><strong>Storage:</strong> 128GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 2: iPhone 11 -->
+<section class="product">
+    <img src="Images/Iphones 11RED.jpg" alt="iPhone 11" class="product-image">
+    <h2>iPhone 11</h2>
+    <p class="price">R3000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 11-color">Color:</label>
+        <select id="iPhone 11-color" class="color-dropdown">
+            <option value="Red">Red</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 11', 3000, 'Images/Iphones 11RED.jpg', 'A budget-friendly iPhone with a stunning display.', 'iPhone 11-color', '128GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 11')">More Info</button>
+    <div id="iPhone 11-info" class="more-info-details">
+        <p><strong>Color:</strong> Red</p>
+        <p><strong>Storage:</strong> 128GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 3: iPhone 11 Pro -->
+<section class="product">
+    <img src="Images/Iphone 11 pro 2.jpg" alt="iPhone 11 Pro" class="product-image">
+    <h2>iPhone 11 Pro</h2>
+    <p class="price">R3400</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 11 Pro-color">Color:</label>
+        <select id="iPhone 11 Pro-color" class="color-dropdown">
+            <option value="Midnight black">Midnight Black</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 11 Pro', 3400, 'Images/Iphone 11 pro 2.jpg', 'A premium iPhone with a stunning display.', 'iPhone 11 Pro-color', '256GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 11 Pro')">More Info</button>
+    <div id="iPhone 11 Pro-info" class="more-info-details">
+        <p><strong>Color:</strong> Midnight Black</p>
+        <p><strong>Storage:</strong> 256GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 4: iPhone 12 Mini -->
+<section class="product">
+    <img src="Images/Iphone 12 mini .jpeg" alt="iPhone 12 Mini" class="product-image">
+    <h2>iPhone 12 Mini</h2>
+    <p class="price">R2600</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 12 Mini-color">Color:</label>
+        <select id="iPhone 12 Mini-color" class="color-dropdown">
+            <option value="Blue">Blue</option>
+
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 12 Mini', 2600, 'Images/Iphone 12 mini .jpeg', 'A compact iPhone with 5G.', 'iPhone 12 Mini-color', '256GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 12 Mini')">More Info</button>
+    <div id="iPhone 12 Mini-info" class="more-info-details">
+        <p><strong>Color:</strong> Blue</p>
+        <p><strong>Storage:</strong> 256GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 5: iPhone 8 -->
+<section class="product">
+    <img src="Images/Iphone 8 Black.jpg" alt="iPhone 8" class="product-image">
+    <h2>iPhone 8</h2>
+    <p class="price">R2000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 8-color">Color:</label>
+        <select id="iPhone 8-color" class="color-dropdown">
+            <option value="Black">Black</option>
+
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 8', 2000, 'Images/Iphone 8 Black.jpg', 'A classic iPhone with a great design.', 'iPhone 8-color', '64GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 8')">More Info</button>
+    <div id="iPhone 8-info" class="more-info-details">
+        <p><strong>Color:</strong> Black</p>
+        <p><strong>Storage:</strong> 64GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 6: iPhone 8 Plus -->
+<section class="product">
+    <img src="Images/iphone_8_plus_silver.webp" alt="iPhone 8 Plus" class="product-image">
+    <h2>iPhone 8 Plus</h2>
+    <p class="price">R2200</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 8 Plus-color">Color:</label>
+        <select id="iPhone 8 Plus-color" class="color-dropdown">
+            <option value="Space Gray">Space Gray</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 8 Plus', 2200, 'Images/iphone_8_plus_silver.webp', 'A larger version of the iPhone 8.', 'iPhone 8 Plus-color', '128GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 8 Plus')">More Info</button>
+    <div id="iPhone 8 Plus-info" class="more-info-details">
+        <p><strong>Color:</strong> Space Gray</p>
+        <p><strong>Storage:</strong> 128GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 7: iPhone Xs -->
+<section class="product">
+    <img src="Images/IphoneXs Max.jpg" alt="iPhone Xs Max" class="product-image">
+    <h2>iPhone Xs</h2>
+    <p class="price">R1700</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone Xs-color">Color:</label>
+        <select id="iPhone Xs-color" class="color-dropdown">
+            <option value="Jet Black">Jet Black</option>
+            <option value="White">White</option>
+            <option value="Pink">Pink</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone Xs Max', 1700, 'Images/IphoneXs Max.jpg', 'A reliable iPhone with a great camera.', 'iPhone Xs-color', '128GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone Xs')">More Info</button>
+    <div id="iPhone Xs-info" class="more-info-details">
+        <p><strong>Color:</strong> Jet Black, White, Pink</p>
+        <p><strong>Storage:</strong> 128GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 8: iPhone 7 Plus -->
+<section class="product">
+    <img src="Images/Iphone 7 plus.jpg" alt="iPhone 7 Plus" class="product-image">
+    <h2>iPhone 7 Plus</h2>
+    <p class="price">R1400</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 7 Plus-color">Color:</label>
+        <select id="iPhone 7 Plus-color" class="color-dropdown">
+            <option value="Rose Gold">Rose Gold</option>
+            <option value="Black">Black</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 7 Plus', 1400, 'Images/Iphone 7 plus.jpg', 'A larger version of the iPhone 7.', 'iPhone 7 Plus-color', '128GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 7 Plus')">More Info</button>
+    <div id="iPhone 7 Plus-info" class="more-info-details">
+        <p><strong>Color:</strong> Rose Gold, Black</p>
+        <p><strong>Storage:</strong> 128GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 9: iPhone 12 Pro Max -->
+<section class="product">
+    <img src="Images/Iphone 12 Proo.webp" alt="iPhone 12 Pro Max" class="product-image">
+    <h2>iPhone 12 Pro Max</h2>
+    <p class="price">R5500</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 12 Pro Max-color">Color:</label>
+        <select id="iPhone 12 Pro Max-color" class="color-dropdown">
+            <option value="Titanium Green">Titanium Green</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 12 Pro Max', 5500, 'Images/Iphone 12 Proo.webp', 'The most advanced iPhone ever.', 'iPhone 12 Pro Max-color', '256GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 12 Pro Max')">More Info</button>
+    <div id="iPhone 12 Pro Max-info" class="more-info-details">
+        <p><strong>Color:</strong> Titanium Green</p>
+        <p><strong>Storage:</strong> 256GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 10: iPhone 13 Pro Max -->
+<section class="product">
+    <img src="Images/Iphone13 silver.avif" alt="iPhone 13 Pro Max" class="product-image">
+    <h2>iPhone 13 Pro Max</h2>
+    <p class="price">R8000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 13 Pro Max-color">Color:</label>
+        <select id="iPhone 13 Pro Max-color" class="color-dropdown">
+            <option value="Peach">Peach</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 13 Pro Max', 8000, 'Images/Iphone13 silver.avif', 'A premium iPhone with a large display.', 'iPhone 13 Pro Max-color', '64GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 13 Pro Max')">More Info</button>
+    <div id="iPhone 13 Pro Max-info" class="more-info-details">
+        <p><strong>Color:</strong> Peach</p>
+        <p><strong>Storage:</strong> 64GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 11: iPhone 14 -->
+<section class="product">
+    <img src="Images/Iphone 14.jpg" alt="iPhone 14" class="product-image">
+    <h2>iPhone 14</h2>
+    <p class="price">R10000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 14-color">Color:</label>
+        <select id="iPhone 14-color" class="color-dropdown">
+            <option value="Green Light">Green Light</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 14', 10000, 'Images/Iphone 14.jpg', 'The latest iPhone with advanced features.', 'iPhone 14-color', '512GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 14')">More Info</button>
+    <div id="iPhone 14-info" class="more-info-details">
+        <p><strong>Color:</strong> Green Light</p>
+        <p><strong>Storage:</strong> 512GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 12: iPhone 13 Pro -->
+<section class="product">
+    <img src="Images/Iphone 13 pro.png" alt="iPhone 13 Pro" class="product-image">
+    <h2>iPhone 13 Pro</h2>
+    <p class="price">R7000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 13 Pro-color">Color:</label>
+        <select id="iPhone 13 Pro-color" class="color-dropdown">
+            <option value="Blue Titanium">Blue Titanium</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 13 Pro', 7000, 'Images/Iphone 13 pro.png', 'The newest iPhone with cutting-edge technology.', 'iPhone 13 Pro-color', '512GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 13 Pro')">More Info</button>
+    <div id="iPhone 13 Pro-info" class="more-info-details">
+        <p><strong>Color:</strong> Blue Titanium</p>
+        <p><strong>Storage:</strong> 512GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 13: iPhone 13 -->
+<section class="product">
+    <img src="Images/Iphone13Pink.jpeg" alt="iPhone 13" class="product-image">
+    <h2>iPhone 13</h2>
+    <p class="price">R6000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 13-color">Color:</label>
+        <select id="iPhone 13-color" class="color-dropdown">
+            <option value="Pink">Pink</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 13', 6000, 'Images/Iphone13Pink.jpeg', 'A powerful iPhone with a great camera.', 'iPhone 13-color', '256GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 13')">More Info</button>
+    <div id="iPhone 13-info" class="more-info-details">
+        <p><strong>Color:</strong> Pink</p>
+        <p><strong>Storage:</strong> 256GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 14: iPhone X -->
+<section class="product">
+    <img src="Images/Iphone X.jpg" alt="iPhone X" class="product-image">
+    <h2>iPhone X</h2>
+    <p class="price">R1500</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone X-color">Color:</label>
+        <select id="iPhone X-color" class="color-dropdown">
+            <option value="White">White</option>
+            <option value="Peach">Peach</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone X', 1500, 'Images/Iphone X.jpg', 'A revolutionary iPhone with Face ID.', 'iPhone X-color', '128GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone X')">More Info</button>
+    <div id="iPhone X-info" class="more-info-details">
+        <p><strong>Color:</strong> White, Peach</p>
+        <p><strong>Storage:</strong> 128GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 15: iPhone 12 Pro -->
+<section class="product">
+    <img src="Images/apple-iphone-12-pro-128gb-silver.jpg" alt="iPhone 12 Pro" class="product-image">
+    <h2>iPhone 12 Pro</h2>
+    <p class="price">R5000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 12 Pro-color">Color:</label>
+        <select id="iPhone 12 Pro-color" class="color-dropdown">
+            <option value="Light Blue">Light Blue</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 12 Pro', 5000, 'Images/apple-iphone-12-pro-128gb-silver.jpg', 'The most advanced iPhone ever.', 'iPhone 12 Pro-color', '256GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 12 Pro')">More Info</button>
+    <div id="iPhone 12 Pro-info" class="more-info-details">
+        <p><strong>Color:</strong> Light Blue</p>
+        <p><strong>Storage:</strong> 256GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 16: iPhone 12 -->
+<section class="product">
+    <img src="Images/Iphone 12.jpeg" alt="iPhone 12" class="product-image">
+    <h2>iPhone 12</h2>
+    <p class="price">R4200</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 12-color">Color:</label>
+        <select id="iPhone 12-color" class="color-dropdown">
+            <option value="Light Green">Light Green</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 12', 4200, 'Images/Iphone 12.jpeg', 'The most advanced iPhone ever.', 'iPhone 12-color', '128GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 12')">More Info</button>
+    <div id="iPhone 12-info" class="more-info-details">
+        <p><strong>Color:</strong> Light Green</p>
+        <p><strong>Storage:</strong> 128GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 17: iPhone 11 Pro Max -->
+<section class="product">
+    <img src="Images/Iphone 11 pro max.jpeg" alt="iPhone 11 Pro Max" class="product-image">
+    <h2>iPhone 11 Pro Max</h2>
+    <p class="price">R4000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 11 Pro Max-color">Color:</label>
+        <select id="iPhone 11 Pro Max-color" class="color-dropdown">
+            <option value="Silver">Silver</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 11 Pro Max', 4000, 'Images/Iphone 11 pro max.jpeg', 'The most advanced iPhone ever.', 'iPhone 11 Pro Max-color', '256GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 11 Pro Max')">More Info</button>
+    <div id="iPhone 11 Pro Max-info" class="more-info-details">
+        <p><strong>Color:</strong> Silver</p>
+        <p><strong>Storage:</strong> 256GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 18: iPhone 7 -->
+<section class="product">
+    <img src="Images/Iphone 7.jpg" alt="iPhone 7" class="product-image">
+    <h2>iPhone 7</h2>
+    <p class="price">R1350</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 7-color">Color:</label>
+        <select id="iPhone 7-color" class="color-dropdown">
+            <option value="Black">Black</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 7', 1350, 'Images/Iphone 7.jpg', 'A classic iPhone with a great design.', 'iPhone 7-color', '64GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 7')">More Info</button>
+    <div id="iPhone 7-info" class="more-info-details">
+        <p><strong>Color:</strong> Blackr</p>
+        <p><strong>Storage:</strong> 64GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+
+<!-- Product 19: iPhone 6s -->
+<section class="product">
+    <img src="Images/Iphone 6s.jpeg" alt="iPhone 6s" class="product-image">
+    <h2>iPhone 6s</h2>
+    <p class="price">R1000</p>
+    <!-- Color Selection Dropdown -->
+    <div class="color-selection">
+        <label for="iPhone 6s-color">Color:</label>
+        <select id="iPhone 6s-color" class="color-dropdown">
+            <option value="Peach">Peach</option>
+        </select>
+    </div>
+    <button onclick="addToCart('iPhone 6s', 1000, 'Images/Iphone 6s.jpeg', 'A classic iPhone with a great design.', 'iPhone 6s-color', '64GB', '95%', 'Comes with charger and accessories')">Add to Cart</button>
+    <button class="more-info" onclick="showMoreInfo('iPhone 6s')">More Info</button>
+    <div id="iPhone 6s-info" class="more-info-details">
+        <p><strong>Color:</strong> Peach</p>
+        <p><strong>Storage:</strong> 64GB</p>
+        <p><strong>Battery Capacity:</strong> 95%</p>
+        <p><strong>Extras:</strong> Comes with charger and accessories</p>
+    </div>
+</section>
+        </section>
+
+
+        <!-- Video Section for Iphone -->
+        <section class="video-section">
+            <h2>Discover the Future of iPhones</h2>
+            <video autoplay loop muted playsinline class="video">
+                <source src="Videos/Animated Iphone.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section class="video-section">
+            <h2>Selling to customer</h2>
+            <video autoplay loop muted playsinline class="video">
+                <source src="Videos/Customer Videos.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> 
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="Information.html" target="_blank">Email: Girlyphones@gmail.com</a></li>
+                    <li><a href="Information.html" target="_blank">Phone: +27 76 687 3535</a></li>
+                    <li><a href="https://www.tiktok.com/@girlyiphonestoresotre?_t=ZM-8u70n0CZguN&_r=1" target="_blank">TikTok: @girlyiphonestoresotre</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Information.html" target="_blank">About Us</a></li>
+                    <li><a href="Information.html" target="_blank">Delivery Information</a></li>
+                    <li><a href="Information.html" target="_blank">Return Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 girly Iphone store All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
